@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  /* background: brown; */
+}
+header {
+  /* display: flex; */
+  width: 100%;
+  height: 10vh;
+  /* justify-content: right; */
+}
+nav {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 30px 30px 30px 30px;
+}
+#app-icon {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-image: url(./menu.svg);
+  cursor: pointer;
+}
+#app-icon:hover {
+  background-image: url(./menu\ black.svg);
+}
+#google-plus-icon {
+  height: 38px;
+}
+#nav-left {
+  display: flex;
+  justify-content: space-evenly;
+  width: 180px;
+}
+#nav-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 260px;
+  margin-right: 20px;
+}
+a {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+#google-logo {
+  display: flex;
+  position: relative;
+  top: 115px;
+  margin: auto;
+}
+#search-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 140px;
+  width: 800px;
+  height: 150px;
+  margin: auto;
+  padding: 20px;
+  justify-content: space-between;
+}
+#input-container {
+  display: flex;
+  margin: 0px auto 0px auto;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 600px;
+  height: 60px;
+  border: 0.3px solid rgba(0, 0, 0, 0.2);
+  /* padding: 50px 0px 50x 0px; */
+  border-radius: 20px;
+}
+#input-container:hover {
+  box-shadow: 0px 3px 2px -2px grey;
+}
+#search-icon {
+  color: #9aa0a6;
+  height: 35px;
+  width: 35px;
+}
+#microphone-icon {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+#input-container input {
+  height: 40px;
+  width: 480px;
+  font-size: 1.3rem;
+  border-style: none;
+}
+#button-container {
+  display: flex;
+  position: relative;
+  top: 60px;
+  margin: auto;
+  justify-content: space-evenly;
+  width: 500px;
+}
+#button-container button {
+  height: 45px;
+  width: 180px;
+  font-size: 18px;
+  border-style: none;
+}
+#button-container button:hover {
+  border: 0.5px solid rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 15vh;
+  width: 100%;
+  bottom: 5px;
+  justify-content: space-between;
+  padding: 30px 30px 30px 30px;
+  font-size: 1.2rem;
+  background: rgb(236, 236, 236);
+  border-top: 1px solid #e4e4e4;
+}
+#footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #e4e4e4;
+}
+#footer-links-left {
+  width: 480px;
+}
+#footer-links-right {
+  width: 380px;
+}
+#footer-links-left,
+#footer-links-right {
+  display: flex;
+  justify-content: space-between;
+}
