@@ -16,15 +16,18 @@ header {
 nav {
   display: flex;
   width: 100%;
-  height: 10vh;
+  height: 36px;
   justify-content: space-between;
   /* align-items: center; */
-  padding: 30px 30px 30px 30px;
+  margin-top: 15px;
+  padding: 15px 10px 10px 0px;
+  font-size: 13px;
+  align-items: center;
 }
 #app-icon {
   display: inline-block;
-  height: 30px;
-  width: 30px;
+  height: 16px;
+  width: 16px;
   background-image: url(./menu.svg);
   cursor: pointer;
 }
@@ -32,18 +35,19 @@ nav {
   background-image: url(./menu\ black.svg);
 }
 #google-plus-icon {
-  height: 38px;
+  height: 32px;
 }
 #nav-left {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   width: 180px;
 }
 #nav-right {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 260px;
+  width: 200px;
   margin-right: 20px;
 }
 a {
@@ -56,18 +60,18 @@ a:hover {
 #google-logo {
   display: flex;
   position: relative;
-  top: 115px;
+  top: 100px;
   margin: auto;
 }
 #search-container {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 140px;
+  top: 130px;
   width: 800px;
-  height: 150px;
+  height: 60px;
   margin: auto;
-  padding: 20px;
+  padding: 0 10px;
   justify-content: space-between;
 }
 #input-container {
@@ -76,22 +80,24 @@ a:hover {
   justify-content: space-evenly;
   align-items: center;
   width: 600px;
-  height: 60px;
-  border: 0.3px solid rgba(0, 0, 0, 0.2);
+  height: 48px;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
   /* padding: 50px 0px 50x 0px; */
-  border-radius: 20px;
+  border-radius: 24px;
 }
 #input-container:hover {
-  box-shadow: 0px 3px 2px -2px grey;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
 }
 #search-icon {
   color: #9aa0a6;
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
 }
 #microphone-icon {
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
   cursor: pointer;
 }
 #input-container input {
@@ -103,20 +109,25 @@ a:hover {
 #button-container {
   display: flex;
   position: relative;
-  top: 60px;
-  margin: auto;
-  justify-content: space-evenly;
+  top: 50px;
+  margin: 0 130px;
+  justify-content: center;
   width: 500px;
 }
 #button-container button {
-  height: 45px;
-  width: 180px;
-  font-size: 18px;
-  border-style: none;
+  height: 36px;
+  min-width: 60px;
+  font-size: 14px;
+  padding: 0 16px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  color: #5f6368;
 }
 #button-container button:hover {
-  border: 0.5px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid #c6c6c6;
+  background-color: #f8f8f8;
   border-radius: 6px;
+  color: #222;
 }
 footer {
   display: flex;
@@ -127,9 +138,13 @@ footer {
   bottom: 5px;
   justify-content: space-between;
   padding: 30px 30px 30px 30px;
-  font-size: 1.2rem;
+  font-size: 14px;
+  color: #5f6368;
   background: rgb(236, 236, 236);
   border-top: 1px solid #e4e4e4;
+}
+footer a {
+  color: #5f6368;
 }
 #footer-links {
   display: flex;
@@ -138,10 +153,10 @@ footer {
   border-top: 1px solid #e4e4e4;
 }
 #footer-links-left {
-  width: 480px;
+  width: 320px;
 }
 #footer-links-right {
-  width: 380px;
+  width: 220px;
 }
 #footer-links-left,
 #footer-links-right {
